@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Waifu Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+
+<body>
+<h1>Random Waifu Gallery</h1>
+<div class="gallery">
+    <% images.forEach(function(image) { %>
+        <div class="card">
+            <img src="<%= image %>" alt="Waifu Image" class="waifu-img">
+        </div>
+    <% }) %>
+</div>
+<div>
+    <footer>@Made By Amit Vikram.</footer>
+</div>
+</body>
+
+</html>
